@@ -1,0 +1,368 @@
+font-family: 'Montserrat', sans-serif; 
+font-family: 'Open Sans', sans-serif;
+ *{ 
+
+    margin: 0;
+    padding: 0;
+
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #204f87;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #4b97f3;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+
+}
+.banner h1{
+    font-family: 'Montserrat', sans-serif; 
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+.hg{
+    min-height: 90vh;
+    align-items: center;
+    
+
+}
+.icon{
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translateX(-50%);
+    animation: updown 1s linear infinite ;
+    animation-direction: alternate;
+    
+}
+@keyframes updown{
+    0%{ 
+        top: 75%;   
+
+    }
+  100%{
+    top: 85%;
+
+}  
+
+    }
+
+.who-we-are{
+
+}
+.who-we-are span{
+    height: 5px;
+    width: 0;
+    background-color: #f05328;
+    display: inline-block;
+    transition: .5s all ease-in-out;
+
+
+}
+.who-we-are h1{
+    font-family: 'Montserrat', sans-serif; 
+    color: #204f87;
+    font-size: 38px;
+
+}
+.who-we-are p{
+    font-family: 'Open Sans', sans-serif;
+    color: #b0b0b1;
+
+}
+
+.who-we-are:hover span{
+    width: 50px;
+}
+.what-we-do{
+    background-color: #f7f8f8;
+    background-image: url(../images/what-we-do-bg.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 980px;
+
+
+}
+
+.what-we-do:hover .heading span{
+    width: 50px;
+
+
+}
+.heading{
+
+}
+.heading span{
+    height: 5px;
+    width: 0;
+    background-color: #f05328;
+    display: block;
+    transition: .5s all ease-in-out;
+    margin: auto; 
+}
+.heading h1{
+    color: #204f87;
+    font-size: 38px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; 
+
+}
+.image{
+
+    position: relative;
+}
+.image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,28377e+61,28377e+100&0+0,1+61 */
+background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, rgba(40,55,126,1) 61%, rgba(40,55,126,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(40,55,126,1) 61%,rgba(40,55,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(40,55,126,1) 61%,rgba(40,55,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+
+
+    opacity: .5;
+    transition: .5s all ease-in-out;
+}
+.image:hover::before{
+    height: 100%;
+
+}
+.text{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+
+}
+.text h1{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+
+
+}
+.image:hover .text{
+    opacity: 1;
+    top: 50%;
+}
+.image-icon{
+    position: absolute;
+    left: 40%;
+    top: 80%;
+    color: #fff;
+    font-size: 30px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+
+}
+ .image:hover .image-icon{
+    opacity: 1;
+    left: 50%;
+
+} 
+.attorney-section{
+    background-image: url(../images/attorneys-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+
+}
+.attorney-section span{
+    width: 0;
+    height: 5px;
+    display: block;
+    background-color: #f05328;
+    transition:.5s all ease-in-out
+
+}
+.attorney-section h1{
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+.attorney-section p{
+    color: #929dcf;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.attorney-section a{
+    color: #f05328;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.attorney-section:hover span{
+    width: 50px;
+
+}
+.designation h2{
+    text-transform: uppercase;
+
+}
+
+.designation{
+    position: absolute;
+    left: 12%;
+    top: 80%;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+    color: #fff
+    
+    
+    
+}
+.image:hover .designation{
+    top: 75%;
+    opacity: 1;
+}
+.language:hover .heading span{
+    width: 50px;
+}
+.language{
+
+}
+.language h2{
+    color: #204f87;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 800;
+
+}
+.language p{
+    color: #b1b0b1;
+
+}
+.language a{
+    color: #f05328;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+.contact{
+    background-color: #28377e;
+
+}
+form{
+
+}
+form input{
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid rgb(206, 195, 195) !important;
+    border-radius: 0 !important;
+    caret-color: #fff !important;
+
+}
+form textarea{
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid rgb(206, 195, 195) !important;
+    border-radius: 0 !important;
+    caret-color: #fff !important;
+    
+
+
+
+}
+form input::placeholder{
+    color: #fff !important;
+
+}
+form textarea::placeholder{
+    color: #fff !important;
+    
+}
+form input:focus{
+    box-shadow: none !important;
+}
+form textarea:focus{
+    box-shadow: none !important;
+}
+
+
+form input[type="submit"]{
+    border: none !important;
+    color: #fff;
+    padding: 10px 50px;
+    background: #f2622c !important;
+    border: 2px solid #f2622c !important;
+    transition: .5s all ease-in-out;
+    
+
+}
+form input[type="submit"]:hover{
+    background: transparent !important;
+    
+}
+.contact .heading h1{
+    color:  #fff !important;
+}
+.contact:hover .heading span {
+    width: 50px;
+}
+
+.footer{
+    background-color: #0C1234;
+}
+.copyright{
+
+}
+.copyright p{
+    color: #616ca8;
+
+}
+.social-icon{
+    text-align: right;
+
+   
+
+}
+.social-icon ul{
+    list-style: none;
+    margin: 0;
+    width: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+.social-icon ul li {
+    
+}
+.social-icon ul li a{
+   color: #b1b7dd !important;
+}
+
+
+
+
+
+
+
+
